@@ -430,6 +430,7 @@
             this.Controls.Add(this.tabControl);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "FrmFamiliar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmFamiliar";
             this.Load += new System.EventHandler(this.FrmFamiliar_Load);
             this.tabControl.ResumeLayout(false);

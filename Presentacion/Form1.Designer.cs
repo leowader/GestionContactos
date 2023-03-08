@@ -88,6 +88,7 @@
             this.Controls.Add(this.btnEmpresarial);
             this.Controls.Add(this.btnFamiliar);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
 

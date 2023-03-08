@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPageDatos = new System.Windows.Forms.TabPage();
+            this.BtnActualizar = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnNew = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
@@ -56,7 +57,6 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.EliminarStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.VerStrip = new System.Windows.Forms.ToolStripMenuItem();
-            this.BtnActualizar = new System.Windows.Forms.Button();
             this.tabControl.SuspendLayout();
             this.tabPageDatos.SuspendLayout();
             this.groupBoxComer.SuspendLayout();
@@ -90,6 +90,22 @@
             this.tabPageDatos.TabIndex = 0;
             this.tabPageDatos.Text = "INSERTAR";
             this.tabPageDatos.UseVisualStyleBackColor = true;
+            // 
+            // BtnActualizar
+            // 
+            this.BtnActualizar.BackColor = System.Drawing.Color.Gray;
+            this.BtnActualizar.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BtnActualizar.FlatAppearance.BorderSize = 0;
+            this.BtnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnActualizar.Font = new System.Drawing.Font("Impact", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnActualizar.ForeColor = System.Drawing.SystemColors.Control;
+            this.BtnActualizar.Location = new System.Drawing.Point(358, 316);
+            this.BtnActualizar.Name = "BtnActualizar";
+            this.BtnActualizar.Size = new System.Drawing.Size(75, 37);
+            this.BtnActualizar.TabIndex = 22;
+            this.BtnActualizar.Text = "ACTUALIZAR";
+            this.BtnActualizar.UseVisualStyleBackColor = false;
+            this.BtnActualizar.Click += new System.EventHandler(this.BtnActualizar_Click);
             // 
             // btnClose
             // 
@@ -304,7 +320,7 @@
             this.tabPageList.Location = new System.Drawing.Point(4, 22);
             this.tabPageList.Name = "tabPageList";
             this.tabPageList.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageList.Size = new System.Drawing.Size(691, 377);
+            this.tabPageList.Size = new System.Drawing.Size(691, 364);
             this.tabPageList.TabIndex = 1;
             this.tabPageList.Text = "LISTA EMPRESARIAL";
             this.tabPageList.UseVisualStyleBackColor = true;
@@ -360,25 +376,9 @@
             // VerStrip
             // 
             this.VerStrip.Name = "VerStrip";
-            this.VerStrip.Size = new System.Drawing.Size(180, 22);
+            this.VerStrip.Size = new System.Drawing.Size(127, 22);
             this.VerStrip.Text = "VER";
             this.VerStrip.Click += new System.EventHandler(this.VerStrip_Click);
-            // 
-            // BtnActualizar
-            // 
-            this.BtnActualizar.BackColor = System.Drawing.Color.Gray;
-            this.BtnActualizar.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BtnActualizar.FlatAppearance.BorderSize = 0;
-            this.BtnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnActualizar.Font = new System.Drawing.Font("Impact", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnActualizar.ForeColor = System.Drawing.SystemColors.Control;
-            this.BtnActualizar.Location = new System.Drawing.Point(358, 316);
-            this.BtnActualizar.Name = "BtnActualizar";
-            this.BtnActualizar.Size = new System.Drawing.Size(75, 37);
-            this.BtnActualizar.TabIndex = 22;
-            this.BtnActualizar.Text = "ACTUALIZAR";
-            this.BtnActualizar.UseVisualStyleBackColor = false;
-            this.BtnActualizar.Click += new System.EventHandler(this.BtnActualizar_Click);
             // 
             // FrmEmpresarial
             // 
@@ -388,6 +388,7 @@
             this.ClientSize = new System.Drawing.Size(718, 415);
             this.Controls.Add(this.tabControl);
             this.Name = "FrmEmpresarial";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmEmpresarial";
             this.Load += new System.EventHandler(this.FrmEmpresarial_Load);
             this.tabControl.ResumeLayout(false);
